@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#Vim & mac
+.DS_Store
+*.sw[pon]
+
 # Runtime data
 pids
 *.pid
@@ -56,4 +60,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+
 
