@@ -1,0 +1,24 @@
+{
+  "name": "weather_nantes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dateformat": "^3.0.2",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dasten-Duranin/weatherNantes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dasten-Duranin/weatherNantes/issues"
+  },
+  "homepage": "https://github.com/Dasten-Duranin/weatherNantes#readme"
+}
