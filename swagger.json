@@ -1,0 +1,71 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "L'API permet de récupérer différentes données sur la pollution de la ville de Nantes.",
+    "version": "1.0.0",
+    "title": "pollutionNantes",
+    "contact": {
+      "email": "berthe.thomas01@gmail.com"
+    },
+    "license": {
+      "name": "leroux.tanguy.51@gmail.com souchu.laura@gmail.com"
+    }
+  },
+  "host": "localhost:8001",
+  "tags": [
+    {
+      "name": "pollutionNantes",
+      "description": "API permettant de récupérer les données sur la pollution de Nantes en temps réel"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/pollution": {
+      "get": {
+        "tags": [
+          "pollutionNantes"
+        ],
+        "summary": "Retourne les données de pollution de Nantes",
+        "description": "",
+        "operationId": "getPollution",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Opération réussie",
+            "schema": {
+              "$ref": "#/definitions/Pollution"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Pollution": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "pm10": {
+          "type": "number"
+        },
+        "indice": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
