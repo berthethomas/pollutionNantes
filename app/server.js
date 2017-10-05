@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var express = require('express'),
+	cors = require('cors'),
 	path = require('path');
 
 //controllers
@@ -8,6 +9,8 @@ var pollution = require('./controllers/pollution');
 
 //application
 var	app = express();
+
+app.use(cors());
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
